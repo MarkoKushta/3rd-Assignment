@@ -84,6 +84,7 @@ function playRound(playerSelection, computerSelection){
             else{
 
                 console.log("Enter a proper value");
+                console.log(" ");
                 return drawCount++;
 
             }
@@ -126,6 +127,7 @@ function playRound(playerSelection, computerSelection){
             else{
 
                 console.log("Enter a proper value");
+                console.log(" ");
                 return drawCount++;
                 
             }
@@ -168,6 +170,7 @@ function playRound(playerSelection, computerSelection){
             else{
 
                 console.log("Enter a proper value");
+                console.log(" ");
                 return drawCount++;
                 
             }
