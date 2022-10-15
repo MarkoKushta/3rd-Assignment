@@ -27,7 +27,7 @@ function game(startGame){
             else {
                 i--;
                 alert("Please enter a proper value!");
-                continue;
+                playRound(playerSelection, getRandomInt(1, 3))
             }
             
         }
