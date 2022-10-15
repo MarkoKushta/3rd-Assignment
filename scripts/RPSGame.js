@@ -9,6 +9,9 @@ game(startGame);
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
+function selectionCheck(playerSelection){
+    
+}
 
 function game(startGame){
    
@@ -20,8 +23,15 @@ function game(startGame){
             let userPrompt = prompt("It's your turn: ");
             let playerSelection = userPrompt.toUpperCase();
 
-            console.log("Round " + i);
-            playRound(playerSelection, getRandomInt(1, 3))
+            console.log("=================== Round " + i + " ===================");
+            if(playerSelection == "ROCK" || playerSelection == "PAPER" || playerSelection == "SCISSORS"){
+                playRound(playerSelection, getRandomInt(1, 3))
+            }
+            else {
+                i--;
+                alert("Please enter a proper value!");
+                continue;
+            }
             
         }
         console.log("Results: ")
@@ -81,13 +91,6 @@ function playRound(playerSelection, computerSelection){
 
             }
 
-            else{
-
-                console.log("Enter a proper value");
-                console.log(" ");
-                return drawCount++;
-
-            }
 
            
         case 2:
@@ -124,14 +127,7 @@ function playRound(playerSelection, computerSelection){
 
             }
             
-            else{
 
-                console.log("Enter a proper value");
-                console.log(" ");
-                return drawCount++;
-                
-            }
-          
         
 
         case 3:
@@ -167,13 +163,6 @@ function playRound(playerSelection, computerSelection){
 
             }
 
-            else{
-
-                console.log("Enter a proper value");
-                console.log(" ");
-                return drawCount++;
-                
-            }
              
     }
 }
