@@ -9,9 +9,6 @@ game(startGame);
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
-function selectionCheck(playerSelection){
-    
-}
 
 function game(startGame){
    
