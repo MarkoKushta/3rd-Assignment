@@ -30,7 +30,7 @@ function game(startGame){
         console.log("Draws " + drawCount);
 
         if(winCount == loseCount){
-            console.log("The game ended as a draw!");
+            console.log("The game ended in a draw!");
         }
 
         else if(winCount > loseCount){
